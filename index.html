@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="index.css" rel="stylesheet">
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--BOX ICONS-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <header>
+        <!-- NAVBAR -->
+        <div>
+            <nav class="navbar navbar-expand-lg bg-transparent">
+                <div class="container-fluid">
+                    <!--BRAND LOGO-->
+                    <a class="navbar-brand me-auto" href="#">
+                        <img class="navbar-logo" src="images/logo-main.png" alt="newhome-logo">
+                    </a>
+
+                    <!--MOBILE USER ICON-->
+                    <a class="nav-link d-lg-none text-dark me-2" href="#">
+                        <box-icon name='user' size="sm"></box-icon> </a>
+
+                    <!--NAVBAR TOGGLER-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="">
+                            <box-icon id="toggler-btn" name='menu' size="sm"></box-icon>
+                        </span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto">
+
+                            <li class="nav-item">
+                                <a class="nav-link active text-dark" aria-current="page" href="#">HOME</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    PAGES
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    PROPERTY
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">BLOG</a>
+                            </li>
+
+                        </ul>
+
+                        <a class="nav-link d-none d-lg-flex me-lg-4 text-dark" href="#">
+                            <box-icon name='user' size="sm" class="me-1"></box-icon>
+                            <span>JOIN US</span>
+                        </a>
+
+                        <a class="nav-link d-none d-lg-flex text-dark" href="#">
+                            <box-icon name='plus' size="sm" class="me-1"></box-icon>
+                            <span>ADD PROPERTY</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!--CAROUSEL-->
+        <section class="carousel-section">
+            <div class="container-fluid">
+                <div class="row px-lg-3">
+                    <div id="firstCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#firstCarousel" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#firstCarousel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item rounded rounded-3 active">
+                                <img src="images/Slider 1.jpg" class="slider-img d-block w-100 rounded rounded-3" alt="slider1">
+                                <div class="carousel-caption">
+                                    <h1>Buy or rent properties with no commission</h1>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="images/Slider 2.jpg" class="slider-img d-block w-100 rounded rounded-3" alt="slider2">
+                                <div class="carousel-caption">
+                                    <h1>Free interior consulting for VIP customers</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#firstCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#firstCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- LISTING ITEMS -->
+        <section class="section listing">
+            <div class="container-fluid">
+                <div class="row justify-content-center px-lg-5">
+                    <!--HEADER-->
+                    <div class="listing-header">
+                        <p>Our choice of</p>
+                        <p>popular <b>real estate</b></p>
+                    </div>
+
+                    <!--PROPERTIES-->
+                    <div class="listing-properties row">
+                        <div class="listing-item col-lg-4 col-sm-12">
+                            <div class="listing-item-tag">
+                                Sell
+                            </div>
+                            <img src="images/Our choice - South Sun House.jpg" alt="south-sun-house"
+                                class="rounded rounded-3">
+                            <p class="listing-item-location"><box-icon name='map' type='solid' size="xs"></box-icon>
+                                VILLAS - Brooklyn
+                            </p>
+                            <h4>South Sun House</h4>
+                            <p class="listing-item-description">Lorem ipsum dolor sit amet, wisi nemore fastidii at vis,
+                                eos equidem
+                                admodum</p>
+                            <hr>
+                            <div class="listing-item-details">
+                                <h5>265,000$</h5>
+                                <div class="listing-item-specs">
+                                    <div class="d-flex align-items-center gap-1">
+                                        <box-icon name="area" size="sm"></box-icon>
+                                        <p class="mb-0">290m<sup>2</sup></p>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1">
+                                        <box-icon name="bed" size="sm"></box-icon>
+                                        <p class="mb-0">4</p>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1">
+                                        <box-icon name="bath" size="sm"></box-icon>
+                                        <p class="mb-0">3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="listing-item col-lg-4 col-sm-12">
+                            <div class="listing-item-tag">
+                                For Rent
+                            </div>
+                            <img src="images/Our choice - Mountain Cabin.jpg" alt="mountain-cabin"
+                                class="rounded rounded-3">
+                            <p class="listing-item-location"><box-icon name='map' type='solid' size="xs"></box-icon>
+                                VILLAS - Brooklyn
+                            </p>
+                            <h4>Mountain Cabin</h4>
+                            <p class="listing-item-description">Lorem ipsum dolor sit amet, wisi nemore fastidii at vis,
+                                eos equidem
+                                admodum</p>
+                            <hr>
+                            <div class="listing-item-details">
+                                <h5>89,000$</h5>
+                                <div class="listing-item-specs">
+                                    <div class="d-flex align-items-center gap-1">
+                                        <box-icon name="area" size="sm"></box-icon>
+                                        <p class="mb-0">125m<sup>2</sup></p>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1">
+                                        <box-icon name="bed" size="sm"></box-icon>
+                                        <p class="mb-0">2</p>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1">
+                                        <box-icon name="bath" size="sm"></box-icon>
+                                        <p class="mb-0">2</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="listing-item col-lg-4 col-sm-12">
+                            <div class="listing-item-tag">
+                                For Rent
+                            </div>
+                            <img src="images/Our choice - 3.jpg" alt="south-sun-house" class="rounded rounded-3">
+                            <p class="listing-item-location"><box-icon name='map' type='solid' size="xs"></box-icon>
+                                CONDOS - Staten
+                                Island</p>
+                            <h4>Pine Forest Bungalow</h4>
+                            <p class="listing-item-description">Lorem ipsum dolor sit amet, wisi nemore fastidii at vis,
+                                eos equidem
+                                admodum</p>
+                            <hr>
+                            <div class="listing-item-details">
+                                <h5>1,200$</h5>
+                                <div class="listing-item-specs">
+                                    <div class="d-flex align-items-center gap-1">
+                                        <box-icon name="area" size="sm"></box-icon>
+                                        <p class="mb-0">160m<sup>2</sup></p>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1">
+                                        <box-icon name="bed" size="sm"></box-icon>
+                                        <p class="mb-0">4</p>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-1">
+                                        <box-icon name="bath" size="sm"></box-icon>
+                                        <p class="mb-0">2</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-button text-center">
+                        <button class="btn-orange" type="button">BROWSE ALL PROPERTIES</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEARCH PROPERTY? -->
+        <section class="search-section">
+            <div class="container-fluid">
+                <div class="px-4">
+                    <div class="row search-inner-div justify-content-center gap-5">
+                        <div class="col-lg-4 col-12 p-0">
+                            <img src="images/modern_spaces.jpg" alt="modern-spaces" class="search-image">
+                        </div>
+                        <div class="search-info col-lg-8 col-12">
+                            <h1 class="search-title">Modern spaces and <span class="bolder-text">premium</span> design
+                            </h1>
+                            <p class="mt-4">Lorem ipsum dolor sit amet, minimum inimicus quo no, at vix primis viderere
+                                vituperatoribus. In corpora argumentum.</p>
+                            <div class="search-info-listing">
+                                <p>- Mea omnium explicari</p>
+                                <p>- His no legere feugaitoer</p>
+                                <p>- illum idquem</p>
+                            </div>
+                            <button class="mt-5 d-block d-lg-inline-block mx-auto mx-lg-0 btn-search"
+                                type="button">Search Property</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STEPS -->
+        <section class="steps-section">
+            <div class="container-fluid">
+                <div class="px-lg-5 px-3">
+                    <div class="row">
+                        <div class="section-title-container mb-5">
+                            <h1 class="section-title">How It Works?</h1>
+                            <h1 class="section-title">Find a <span class="bolder-text">perfect home</span></h1>
+                        </div>
+                        <div class="right-border steps-item col-lg-3 col-12">
+                            <i class='bx bx-desktop'></i>
+                            <h2 class="mb-3 mt-3">Find real estate</h2>
+                            <p class="steps-item-description">
+                                Sumo petentium ut per, at his wisim utinam adipiscing. Est ei graeco quod suavitate vix.
+                            </p>
+                        </div>
+
+                        <div class="right-border steps-item col-lg-3 col-12">
+                            <i class="fa-solid fa-house"></i>
+                            <h2 class="mb-3 mt-3">Meet relator</h2>
+                            <p class="steps-item-description">
+                                Sumo petentium ut per, at his wisim utinam adipiscing. Est ei graeco quod suavitate vix.
+                            </p>
+                        </div>
+
+                        <div class="right-border steps-item col-lg-3 col-12">
+                            <i class="fa-regular fa-newspaper"></i>
+                            <h2 class="mb-3 mt-3">Documents</h2>
+                            <p class="steps-item-description">
+                                Sumo petentium ut per, at his wisim utinam adipiscing. Est ei graeco quod suavitate vix.
+                            </p>
+                        </div>
+
+                        <div class="steps-item col-lg-3 col-12">
+                            <i class="fa-solid fa-key"></i>
+                            <h2 class="mb-3 mt-3">Take the keys</h2>
+                            <p class="steps-item-description">
+                                Sumo petentium ut per, at his wisim utinam adipiscing. Est ei graeco quod suavitate vix.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ENQUIRY -->
+        <section class="enquiry-section">
+            <div class="container-fluid">
+                <div class="enquiry-bg">
+                    <div class="enquiry-inner-div row justify-content-center justify-content-lg-between">
+                        <div class="enquiry-left col-lg-7 col-12 text-white my-auto">
+                            <h1>Discover a new way of living</h1>
+                            <p>* Feugait scriptorem qui ea, quo admodum eloquentiam eu. Te malis tibique eum. Ne magna
+                                assum everti.</p>
+                        </div>
+                        <div class="enquiry-right col-lg-5 col-12 my-auto">
+                            <h1>Make an enquiry</h1>
+                            <p>Save your time and easily rent or sell your property with the lowest commission on the
+                                real estate market.</p>
+                            <form>
+                                <input type="text" class="form_input mb-3" placeholder="Your name*" required>
+                                <input type="email" class="form_input mb-3" placeholder="Your email*" required>
+                                <input type="tel" class="form_input mb-3" placeholder="Your phone number*" required>
+                                <button class="btn-orange" type="submit">Make an enquiry</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICE -->
+        <section class="service-section">
+            <div class="container-fluid">
+                <div class="px-lg-5 px-3">
+                    <div class="row align-items-center">
+                        <!-- Left Content Column -->
+                        <div class="service-left col-lg-6 col-12 pe-lg-5">
+                            <div class="section-title-container mb-5 service-title">
+                                <h1 class="section-title">Our expert will help you make <span class="fw-bold">the
+                                        renovation</span></h1>
+                            </div>
+
+                            <!-- Service Items -->
+                            <div class="service-item d-flex mb-4">
+                                <div class="service-item-icon me-4 flex-shrink-0">
+                                    <div class="rounded p-3">
+                                        <i class='bx bx-home' style="font-size: 32px;"></i>
+                                    </div>
+                                </div>
+                                <div class="service-item-info">
+                                    <h4 class="mb-2 fw-semibold">Find inspiration</h4>
+                                    <p class="text-muted mb-0">Sumo petentium ut per, at his wisim utinam adipis cing.
+                                        Est e graeco quod suavitate vix ad praesent.</p>
+                                </div>
+                            </div>
+
+                            <div class="service-item d-flex mb-4">
+                                <div class="service-item-icon me-4 flex-shrink-0">
+                                    <div class="rounded p-3">
+                                        <i class='bx bx-user' style="font-size: 32px;"></i>
+                                    </div>
+                                </div>
+                                <div class="service-item-info">
+                                    <h4 class="mb-2 fw-semibold">Find architect/designer</h4>
+                                    <p class="text-muted mb-0">Sumo petentium ut per, at his wisim utinam adipis cing.
+                                        Est e graeco quod suavitate vix ad praesent.</p>
+                                </div>
+                            </div>
+
+                            <div class="service-item d-flex mb-4">
+                                <div class="service-item-icon me-4 flex-shrink-0">
+                                    <div class="rounded p-3">
+                                        <i class='bx bx-wrench' style="font-size: 32px;"></i>
+                                    </div>
+                                </div>
+                                <div class="service-item-info">
+                                    <h4 class="mb-2 fw-semibold">Begin renovation</h4>
+                                    <p class="text-muted mb-0">Sumo petentium ut per, at his wisim utinam adipis cing.
+                                        Est e graeco quod suavitate vix ad praesent.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Images Column -->
+                        <div class="service-right col-lg-6 col-12 ps-lg-4 d-flex">
+                            <div class="ms-lg-5 w-100">
+                                <div class="row g-3">
+
+                                    <div class="col-12 col-lg-5">
+                                        <div class="h-100 justify-content-lg-end justify-content-center d-flex">
+                                            <img src="images/service01.jpg" alt="Service Image 1"
+                                                class="img-fluid rounded h-75 my-auto"
+                                                style="object-fit: cover; min-height: 400px;">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-lg-7">
+                                        <div class="row g-3 h-100">
+                                            <div class="col-12 d-flex justify-content-center justify-content-lg-start">
+                                                <img src="images/service02.jpg" alt="Service Image 2"
+                                                    class="img-fluid rounded h-100"
+                                                    style="object-fit: cover; height: 190px;">
+                                            </div>
+                                            <div class="col-12 d-flex justify-content-center justify-content-lg-start">
+                                                <img src="images/service03.jpg" alt="Service Image 3"
+                                                    class="img-fluid rounded h-100"
+                                                    style="object-fit: cover; height: 190px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="search-section">
+            <div class="container-fluid">
+                <div class="px-4">
+                    <div class="row search-inner-div justify-content-center gap-5">
+                        <div class="col-lg-4 col-12 p-0">
+                            <img src="images/Explore your home loan options.jpg" alt="modern-spaces"
+                                class="search-image">
+                        </div>
+                        <div class="search-info col-lg-8 col-12">
+                            <h1 class="search-title">Explore your home <span class="bolder-text">loan options</span>
+                            </h1>
+                            <p class="mt-4">Lorem ipsum dolor sit amet, minimum inimicus quo no, at vix primis viderere
+                                vituperatoribus. In corpora argumentum. Vix ferri dicam contentiones ne, ex appetere
+                                salutatus
+                            </p>
+                            <button class="mt-4 d-block d-lg-inline-block mx-auto mx-lg-0 btn-search-green"
+                                type="button">Search Property</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- REVIEWS -->
+        <section>
+            <div class="container-fluid">
+                <div class="px-lg-5 px-3">
+                    <div class="section-title-container mb-5">
+                        <h1 class="section-title">See what others said about us</h1>
+                    </div>
+                    <div id="testimonial" class="carousel slide" data-ride="carousel"
+                        data-bs-ride="carousel">
+                        
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-lg-6 col-12 mb-5">
+                                        <div class="testimonial-item row">
+                                            <div class="col-1"><img src="images/Say about us - 1.png" alt=""></div>
+                                            <div class="col-11 ms-lg-4 mt-lg-2 mt-4 testimonial-info">
+                                                <h4 class="testimonial-name m-0">Toby Young <span class="testimonial-job ms-2">MANAGER</span></h4>
+                                                <p class="mt-3">"Ut vix primis tractatos. Ad est alterum epicuri accusamus. Duo per id his qualisque deseruisse reformidans ex, quo omnesque cotidieque. Dolor voluptua per, his in congue."</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12 mb-5">
+                                        <div class="testimonial-item row">
+                                            <div class="col-1"><img src="images/Say about us 2.png" alt=""></div>
+                                            <div class="col-11 ms-lg-4 mt-lg-2 mt-4 testimonial-info">
+                                                <h4 class="testimonial-name m-0">Anne Reid <span class="testimonial-job ms-2">SALES ADVISOR</span></h4>
+                                                <p class="mt-3">"Ut vix primis tractatos. Ad est alterum epicuri accusamus. Duo per id his qualisque deseruisse reformidans ex, quo omnesque cotidieque. Dolor voluptua per, his in congue."</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12 mb-5">
+                                        <div class="testimonial-item row">
+                                            <div class="col-1"><img src="images/Say about us 3.png" alt=""></div>
+                                            <div class="col-11 ms-lg-4 mt-lg-2 mt-4 testimonial-info">
+                                                <h4 class="testimonial-name m-0">Kevin Wels <span class="testimonial-job ms-2">HOME INSPECTOR</span></h4>
+                                                <p class="mt-3">"Ut vix primis tractatos. Ad est alterum epicuri accusamus. Duo per id his qualisque deseruisse reformidans ex, quo omnesque cotidieque. Dolor voluptua per, his in congue."</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12 mb-5">
+                                        <div class="testimonial-item row">
+                                            <div class="col-1"><img src="images/Say about us 4.png" alt=""></div>
+                                            <div class="col-11 ms-lg-4 mt-lg-2 mt-4 testimonial-info">
+                                                <h4 class="testimonial-name m-0">Aida Rutta <span class="testimonial-job ms-2">AGENT</span></h4>
+                                                <p class="mt-3">"Ut vix primis tractatos. Ad est alterum epicuri accusamus. Duo per id his qualisque deseruisse reformidans ex, quo omnesque cotidieque. Dolor voluptua per, his in congue."</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-6 col-12 mb-5">
+                                        <div class="testimonial-item row">
+                                            <div class="col-1"><img src="images/Say about us 3.png" alt=""></div>
+                                            <div class="col-11 ms-lg-4 mt-lg-2 mt-4 testimonial-info">
+                                                <h4 class="testimonial-name m-0">Kevin Wels <span class="testimonial-job ms-2">HOME INSPECTOR</span></h4>
+                                                <p class="mt-3">"Ut vix primis tractatos. Ad est alterum epicuri accusamus. Duo per id his qualisque deseruisse reformidans ex, quo omnesque cotidieque. Dolor voluptua per, his in congue."</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12 mb-5">
+                                        <div class="testimonial-item row">
+                                            <div class="col-1"><img src="images/Say about us 4.png" alt=""></div>
+                                            <div class="col-11 ms-lg-4 mt-lg-2 mt-4 testimonial-info">
+                                                <h4 class="testimonial-name m-0">Aida Rutta <span class="testimonial-job ms-2">AGENT</span></h4>
+                                                <p class="mt-3">"Ut vix primis tractatos. Ad est alterum epicuri accusamus. Duo per id his qualisque deseruisse reformidans ex, quo omnesque cotidieque. Dolor voluptua per, his in congue."</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12 mb-5">
+                                        <div class="testimonial-item row">
+                                            <div class="col-1"><img src="images/Say about us - 1.png" alt=""></div>
+                                            <div class="col-11 ms-lg-4 mt-lg-2 mt-4 testimonial-info">
+                                                <h4 class="testimonial-name m-0">Toby Young <span class="testimonial-job ms-2">MANAGER</span></h4>
+                                                <p class="mt-3">"Ut vix primis tractatos. Ad est alterum epicuri accusamus. Duo per id his qualisque deseruisse reformidans ex, quo omnesque cotidieque. Dolor voluptua per, his in congue."</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12 mb-5">
+                                        <div class="testimonial-item row">
+                                            <div class="col-1"><img src="images/Say about us 2.png" alt=""></div>
+                                            <div class="col-11 ms-lg-4 mt-lg-2 mt-4 testimonial-info">
+                                                <h4 class="testimonial-name m-0">Anne Reid <span class="testimonial-job ms-2">SALES ADVISOR</span></h4>
+                                                <p class="mt-3">"Ut vix primis tractatos. Ad est alterum epicuri accusamus. Duo per id his qualisque deseruisse reformidans ex, quo omnesque cotidieque. Dolor voluptua per, his in congue."</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#testimonial" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#testimonial" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="utilities.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+
+</html>
