@@ -373,8 +373,8 @@ footer img {
     width: 15%;
 }
 
-footer .row{
-    margin-top: 200px;
+.footer-item{
+    margin-top: 100px;
 }
 
 @media screen and (max-width: 991.98px) {
