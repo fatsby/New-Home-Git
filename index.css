@@ -26,6 +26,22 @@ a:hover {
     border: 1px solid red;
 }
 
+.dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+}
+
+.dropdown-menu .dropdown-submenu-left {
+    right: 100%;
+    left: auto;
+}
+
+.dropdown-menu>li:hover>.dropdown-submenu {
+    display: block;
+}
+
 .navbar {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -365,16 +381,124 @@ a:hover {
     width: 100%;
 }
 
-footer{
+footer {
     background-color: #fafafa;
-}
-
-footer img {
-    width: 15%;
-}
-
-.footer-item{
+    padding: 80px 0 40px;
     margin-top: 100px;
+    border-top: 1px solid #e9ecef;
+}
+
+.footer-logo>img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+.footer-logo h4 {
+    margin: 0;
+    font-weight: 600;
+    color: #333;
+}
+
+.footer-description {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.footer-section h5 {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+    color: #666;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #007bff;
+}
+
+.contact-info {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.contact-info i {
+    width: 20px;
+    color: #666;
+}
+
+.footer-bottom {
+    border-top: 1px solid #e9ecef;
+    padding-top: 30px;
+    margin-top: 50px;
+}
+
+.footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.copyright {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.social-links span {
+    color: #666;
+    font-size: 0.9rem;
+    margin-right: 10px;
+}
+
+.social-links a {
+    color: #666;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+.read-more-btn {
+    background: none;
+    border: none;
+    color: black;
+    text-decoration: none;
+    font-size: 0.95rem;
+    cursor: pointer;
+    padding: 0;
+}
+
+.read-more-btn:hover {
+    color: #0056b3;
 }
 
 @media screen and (max-width: 991.98px) {
