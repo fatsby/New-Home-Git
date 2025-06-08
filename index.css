@@ -521,7 +521,7 @@ footer {
 
 .go-to-top:hover {
   opacity: 1;
-  background-color: var(--primary-color);
+  background-color: #fff;
 }
 
 @media screen and (max-width: 991.98px) {
